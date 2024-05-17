@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+/* HEADER
+------------------------------------------------------------ */
+
+header {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    box-shadow: 4px 3px 2px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0px;
+}
+
+header .logo {
+    width: 60px;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+}
+
+header nav .link {
+    text-transform: capitalize;
+    color: #274C77;
+}
+
+header nav .link:hover {
+    color: #8B8C89;
+    text-decoration: none;
+}
+
+
+/* SECTIONS
+------------------------------------------------------------ */
+
+section {
+    padding: 60px 40px;
+}
+
+section.intro {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(218,218,218,1) 100%);
+}
+
+section.intro .message {
+    max-width: 600px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+section.intro .button_start {
+    display: block;
+    width: min-content;
+    padding: 12px 20px;
+    margin: 40px auto;
+    font-size: 22px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #274C77;
+    border-radius: 8px;
+    border: 2px solid #274C77;
+    background-color: #ffffff;
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+section.intro .button_start:hover {
+    background-color: #f7f7f7;
+}
+
+section.intro .button_start:active {
+    box-shadow: -2px -1px 2px rgba(0, 0, 0, 0.2);
+}

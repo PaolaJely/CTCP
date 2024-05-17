@@ -11,6 +11,7 @@ const port = process.env.PORT || 5000;
 
 // middlewares
 app.use(morgan("dev"));
+app.use("/public", express.static("src/public"));
 
 // routes
 app.get("/", (req, res) => {
@@ -22,5 +23,5 @@ app.get("/ping", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log("> Server is up and running on port : " + port);
+  console.log("> Server is running on port : " + port);
 });
